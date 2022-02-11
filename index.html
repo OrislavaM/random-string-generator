@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Homework 40. Task 1</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form name="randomGenerator" method="get">
+        <h1>Random String Generator</h1>
+
+        <p>String should be <input id="number" type="number" min="3" max="999"> characters long.</p>
+
+        <p>Which characters are allowed to occur in the strings?</p>
+        <div class="parameters">
+            <label><input type="checkbox" name="" id="check1" value="a"> Numeric digits (0-9)</label>
+            <label><input type="checkbox" name="" id="check2" value="b"> Uppercase letters (A-Z)</label>
+            <label><input type="checkbox" name="" id="check3" value="c"> Lowercase letters (a-z)</label>
+        </div>
+        <button id="generate" type="button">Generate</button>
+        <hr>
+        <p>Result: <input id="result" type="text" readonly></p>
+        <p id="lol"></p>
+    </form>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
